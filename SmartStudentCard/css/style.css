@@ -1,0 +1,640 @@
+/* Main Style Start*/
+
+@font-face {
+	font-family: neuropol;
+	src: url(../fonts/neuropol.ttf);
+}
+@font-face {
+	font-family: square721;
+	src: url(../fonts/square721.ttf);
+}
+
+@font-face {
+	font-family: fontawesome;
+	src: url(../fonts/fontawesome.ttf);
+}
+
+
+*{
+	box-sizing: border-box;
+	transition: all 0.5s;
+}
+body{
+	margin: 0px;
+	padding:0px;
+	font-family: square721;
+	min-height: 622px;
+	position: relative;
+}
+body a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.siteTitle{
+	display: block;
+	font-size: 25px;
+	padding: 10px 20px 10px 20px;
+	border-bottom: 2px solid #000000;
+}
+
+.siteTitle a{
+	/*border: 1px solid #ffffff;*/
+	border-radius: 4px;
+	padding:5px 10px;
+	vertical-align: middle;
+	box-shadow: 0px 0px 2px #000000;
+	text-shadow: 0px 0px 20px #000000;
+}
+.main{
+	display: block;
+	
+}
+.clearFix{
+	clear: both;
+}
+
+#shortIntro{
+	margin: 0px 50px;
+}
+
+
+/* Main Style End */
+
+
+/* Grid Section Start */
+
+.col-2{
+	width: 50%;
+	padding: 5px;
+	display: inline-block;
+	float: left;
+	margin: auto;
+}
+.col-3{
+	width: 33%;
+	padding: 5px;
+	display: inline-block;
+	float: left;
+}
+/* Grid Section End */
+
+
+/* Box Section */
+.box{
+	border: 2px solid #06574f;
+	display: block;
+}
+.box>.boxTitle{
+	border-bottom: 2px solid #053e39;
+	line-height: 30px;
+	padding: 0px 10px;
+	background-color: #06574f;
+	color: #FFFFFF;
+
+}
+.box>.boxTitle>h3{
+	margin: 0px;
+	padding: 0px;
+}
+.box>.boxContent{
+	padding: 5px 10px;
+	min-height: 100px;
+}
+.box:hover{
+	box-shadow: 0px 3px 20px #00000099;
+}
+
+/* Box Section end */
+
+.clearFix{
+	clear: both;
+}
+
+/* log in form start */
+.logInForm{
+  display: block;
+  width: 350px;
+  background-color: #06574F;
+  margin:0px auto;
+  border-radius: 20px;
+  padding:10px 40px 40px 40px;
+  box-shadow: 0px 3px 40px #000000B0;
+}
+.logInForm>h3{
+  line-height: 40px;
+  padding: 0px;
+  margin: 0px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.logInForm form{
+  text-align: center;
+}
+
+.logInForm form input{
+  color: #757575;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 100%;
+  margin: 5px 0px;
+  padding: 7px 5px;
+  border-radius: 5px;
+}
+.logInForm form button {
+  padding: 7px 10px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #06574f;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  font-size: 100%;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.logInForm form button:hover{
+  background-color: #103a36;
+}
+
+.logInFormError{
+  text-align: center;
+  width: 350px;
+  padding: 10px 8px;
+  color: #FFFFFF;
+  background-color: #b91414;
+  display: block;
+  margin:0px auto;
+  border-radius: 5px;
+  box-shadow: 0px 3px 40px #000000B0;
+}
+.logInFormError>a{
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+/* log in form start */
+
+/* Header Section Start */
+.header{
+	background-color: #06574f;
+	padding: 0px;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	z-index: 1111111111;
+}
+.mainmenu{
+	
+}
+.mainmenu ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+.mainmenu>ul>li{
+	display: inline-block;
+	position: relative;
+}
+.mainmenu>ul>li>a{
+	padding: 0px 20px;
+	display: block;
+	line-height: 45px;
+	cursor: pointer;
+}
+.mainmenu>ul>li:hover>a{
+	background-color: #053e39;
+	text-shadow: 3px 3px 3px #000000;
+	padding: 0px 25px;
+}
+/* .mainmenu>ul>li:hover>.submenu{display: block;} */
+#menu{
+	display: inline-block;
+	z-index: 4;
+}
+.mainmenu>ul>li>ul{
+	transition: none;
+	position: absolute;
+	top: 55px;
+	left: 0px; 
+	background-color: #06574f;
+}
+
+.submenu{
+	display: none;
+	z-index: 5;
+	width: 200px;
+	border: 2px solid #000;
+}
+.submenu>li{
+	display: block;
+}
+.submenu>li>a{
+	padding: 0px 20px;
+	line-height: 40px;
+	display: block;
+	cursor: pointer;
+}
+
+.submenu>li>a:hover{
+	background-color: #053e39;
+	text-shadow: 3px 3px 3px #000000;
+}
+
+.subMenuTopBox{
+	position: absolute;
+    padding: 0px 0px;
+    top: -10px;
+    left: 20px;
+    background-color: #06574f;
+    border: 2px solid #000;
+    display: block;
+    margin: 0px auto;
+    color: #06574f;
+    z-index: -100;
+    transform: rotate(45deg);
+    border-bottom: 0px;
+    border-right: 0px;
+    height: 20px;
+    width: 20px;
+}
+/* Header Section End */
+
+/* Liberian User Section Start */
+
+.eligibility{
+	padding: 20px;
+}
+
+.eligibility button {
+	padding: 7px 10px;
+	width: 30%;
+	border-radius: 5px;
+	background-color: #06574f;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	font-size: 100%;
+	cursor: pointer;
+	margin-top: 20px;
+
+}
+
+.eligibility button:hover{
+	background-color: #103a36;
+}
+
+.singlebox{
+	width: 80%;
+	display: block;
+	border: 2px solid #000000;
+	margin: auto;
+}
+
+.tableOne{
+	width: 100%;
+	margin: 0px;
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+.tableOneHeader{
+	background-color: #06574f;
+	color: #FFFFFF;
+	line-height: 30px;
+}
+
+.tableOneHeader2{
+	background-color: #619b95;
+	color: #000000;
+	line-height: 30px;
+}
+
+.tableOne .evenRow{
+	background-color: #c3c3c3;
+}
+
+.tableOne .oddRow{
+	background-color: #e7e7e7;
+}
+
+.tableOne .evenRow:hover, .tableOne .oddRow:hover{
+	background-color: #6b938f;	
+}
+
+.tableOne th, .tableOne td{
+	border: 1px solid #222;
+	padding: 5px 5px;
+	text-align: center;
+	vertical-align: center;
+	line-height: 35px;
+}
+
+.reportView{
+	width: 100%;
+	margin: 0px;
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+.reportView .evenRow{
+	background-color: #c3c3c3;
+	line-height: 30px;
+}
+.reportView .oddRow{
+	background-color: #e7e7e7;
+	line-height: 30px;
+}
+.reportView th, .reportView td{
+	border: 1px solid #9f9f9f;
+	padding: 5px 5px;
+	text-align: center;
+	vertical-align: center;
+}
+
+.LibLeftPanel{
+	margin: 0px;
+	width: 33%;
+	float: left;
+	display: inline-block; 
+	padding: 0px 10px;
+}
+.LibLeftPanel button {
+	padding: 7px 10px;
+	width: 50%;
+	border-radius: 5px;
+	background-color: #06574f;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	font-size: 100%;
+	cursor: pointer;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.LibLeftPanel button:hover{
+	background-color: #103a36;
+}
+.LibRightPanel{
+	margin: 0px;
+	width: 67%;
+	float: right;
+	display: inline-block;
+	padding: 0px 10px;
+	border-left: 2px solid black;
+	padding: 0px 10px;
+
+	
+
+}
+.LibRightPanel>h4{
+	text-align: center;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=date] {
+  width: 40%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Liberian User Section End */
+
+/* Doctor User Section Start*/
+
+.docMain{
+	padding: 0px 3px;
+	margin: auto;
+}
+.docLeftPanel{
+
+	width: 40%;
+	float: left;
+	display: inline-block; 
+	border-right: 2px solid black;
+	padding: 0px 10px;
+
+}
+.docLeftPanel>h4{
+	text-align: center;
+}
+.docLeftPanel button {
+	padding: 7px 10px;
+	width: 60%;
+	border-radius: 5px;
+	background-color: #06574f;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	font-size: 100%;
+	cursor: pointer;
+	margin-top: 20px;
+}
+.docLeftPanel textarea{
+	font-size: 20px;
+}
+
+.docLeftPanel button:hover{
+	background-color: #103a36;
+}
+
+.docMiddlePanel{
+	width: 60%;
+	display: inline-block;
+	padding: 0px 10px;
+	
+}
+
+.docMiddlePanel>h4{
+	text-align: center;
+}
+
+.left_student_info{
+	float: left;
+	width: 60%;
+	display: inline-block;
+}
+.right_student_info{
+	float: right;
+	width: 40%;
+	display: inline-block;
+	text-align: right;
+}
+.left_btn{
+	float: left;
+	width: 60%;
+	display: inline-block;
+}
+.right_btn{
+	float: right;
+	width: 40%;
+	display: inline-block;
+	text-align: right;
+}
+
+
+
+.popup{
+	width: 400px;
+	background: #10b5a4;
+	border-radius: 6px;
+	position: absolute;
+	top: -10%;
+	left: 50%;
+	transform: translate(-50%,-50%) scale(0.1);
+	text-align: center;
+	padding: 0 30px 30px;
+	color: #fff;
+	visibility: hidden;
+	transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+	top: 50%;
+	visibility: visible;
+	transform: translate(-50%,-50%) scale(1.0);
+}
+.close-popup{
+	top: 50%;
+	visibility: visible;
+	transform: translate(-50%,-50%) scale(1.0);
+}
+
+.popup h2{
+	font-size: 25px;
+	font-weight: 500;
+	margin: 30px 0 10px;
+}
+.popup button{
+	width: 50%;
+	align-items: center;
+	padding: 5px 0;
+	border: 0;
+	outline: none;
+	font-size: 18px;
+	border-radius: 4px;
+	cursor: pointer;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#styles {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#styles td, #styles th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#styles tr:nth-child(even){background-color: #f2f2f2;}
+
+#styles tr:hover {background-color: #ddd;}
+#styles thead{
+	background-color: #e3e3e3;
+}
+#styles th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: white;
+}
+
+/* Doctor User Section End*/
+
+
+
+
+/* Footer Section Start */
+.footer{
+	border: 2px solid #063631;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin: 0px 2px 0px 2px;
+}
+.footerHolder{
+	color: #06574F;
+}
+.footerHolder a{
+	color: #06574F;
+}
+.footerHolder a:hover{
+	font-weight: bold;
+}
+.footerHolder>.col-2{
+	text-align: center;
+}
+.footerHolder>.col-2>ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+.copyright{
+	display: block;
+	line-height: 40px;
+	background-color: #06574f;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+/* Footer Section End */
