@@ -1,0 +1,20 @@
+
+First download this folder and paste it your xampp folder
+seecond import smart_student_card.sql file your phpmyadmin 
+
+yap! you are all set . now check it from browser
+
+admin logn in :
+          username : admin
+          password : admin
+          
+Doctor logn in :
+          username : taufik
+          password : taufik
+          
+and so on login  check user table from given sql 
+
+fetch any problem or issue contact with me at taufik.cse.bd@gmail.com or 194095@student.duet.ac.bd 
+
+
+          
