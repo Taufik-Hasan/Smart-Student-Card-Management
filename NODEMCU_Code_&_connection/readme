@@ -1,0 +1,14 @@
+
+NodeMCU code for Arduino IDE extension is .ino
+
+Here are some changeable things. that must be changed before working on this project on your pc.
+
+First on ..
+NodeMCU WiFi connection replace wifi name and password from my given .ino file
+
+Second on..
+change ip address and xampp location folder from my given .ino file
+
+fetch any problem or issue contact with me at taufik.cse.bd@gmail.com or 194095@student.duet.ac.bd 
+
+
